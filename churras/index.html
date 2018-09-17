@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container" style="padding-top: 20px;">
+    <div class="row">
+      <div class="container-fluid">
+    
+        <!--DentroContainer-->
+          <button class="accordion" style="font-size: 20px;">Quantos convidados?</button>
+          <!--InicioSeção1-->
+          <div class="panel">
+            <div class="container">
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <input id="HomemAdulto" class="form-control" placeholder="Homem" name="homem" type="text" style="height: 60px; font-size: 50px; text-align: center";>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <input id="MulherAdulto" class="form-control" placeholder="Mulher" name="mulher" type="text" style="height: 60px; font-size: 50px; text-align: center";>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <input id="Crianca" class="form-control" placeholder="Criança" name="crianca" type="text" style="height: 60px; font-size: 50px; text-align: center";>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--FimSeção1-->
+
+          <button class="accordion" style="font-size: 20px;">Quais tipos de carne?</button>
+          <!--InicioSeção2-->
+          <div class="panel">
+            <div class="container">
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <form style="text-align: left;">
+                        <h1>Cortes de Bovino</h1>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck" value="picanha" onclick="myFunction()">Picanha</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck2" value="Cupim" onclick="myFunction()">Cupim</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck3" value="Fraldinha" onclick="myFunction()">Fraldinha</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck4" value="Maminha" onclick="myFunction()">Maminha</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck5" value="Alcatra" onclick="myFunction()">Alcatra</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck6" value="ContraFile" onclick="myFunction()">Contra Filé</label>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <form style="text-align: left;">
+                        <h1>Cortes de Frango </h1>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck7" value="Asinhas" onclick="myFunction()">Asinhas de Frango</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck8" value="FiledeCoxa" onclick="myFunction()">Filé de Coxa</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck9" value="FiledePeito" onclick="myFunction()">Filé de Peito</label>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <form style="text-align: left;">
+                        <h1>Linguiças</h1>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck10" value="LinguicaToscana" onclick="myFunction()">Linguiça Toscana</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck11" value="LinguicaMista" onclick="myFunction()">Linguiça Mista</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck12" value="LinguicaFrango" onclick="myFunction()">Linguiça de Frango</label>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--FimSeção2-->
+
+          <button class="accordion" style="font-size: 20px;">Quais bebidas?</button>
+          <!--InicioSeção3-->
+          <div class="panel">
+            <div class="container">
+              <div class="col-md-4">
+                  <div class="configdiv">
+                     <form style="text-align: left;">
+                        <h1>Bebidas Alcoolicas</h1>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck13" value="Cerveja" onclick="myFunction()">Cerveja Long Neck ou Lata</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck14" value="Cerveja600" onclick="myFunction()">Cerveja 600ml</label>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <form style="text-align: left;">
+                        <h1>Refrigerantes e Sucos</h1>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck15" value="RefriSuco" onclick="myFunction()">Refrigerante 2L</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" id="myCheck16" value="RefriSuco" onclick="myFunction()">Suco de Fruta 1L</label>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="configdiv">
+                      <form style="text-align: left;">
+                        <h1>Acompanhamentos</h1>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Option 1</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Option 2</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Option 3</label>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-lg btn-block" onclick="calcular()" value="Calcular">Calcular</button>
+           <!--FimSeção3-->
+      </div>
+    </div>
+      <div class="container-fluid">
+        <div class="col-md-12 col-offset-md">
+          
+              
+          
+        </div>
+      </div>
+      
+
+  </div>
+  <div class="container" style="padding-top: 20px;">
+    <div class="row">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text" style="display:none; font-size: 20px;">Picanha</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <!-- <p id="message"></p> -->
+                <p id="resultado1" style="display:none;" class="resultado"> </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text2" style="display:none; font-size: 20px;">Cupim</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado2" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text3" style="display:none; font-size: 20px;">Fraldinha</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado3" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text4" style="display:none; font-size: 20px;">Maminha</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado4" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text5" style="display:none; font-size: 20px;">Alcatra</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado5" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text6" style="display:none; font-size: 20px;">Contra Filé</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado6" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text7" style="display:none; font-size: 20px;">Asinhas de Frango</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado7" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text8" style="display:none; font-size: 20px;">Filé de Coxa</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado8" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text9" style="display:none; font-size: 20px;">Filé de Peito</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado9" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text10" style="display:none; font-size: 20px;">Linguiça Toscana</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado10" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text11" style="display:none; font-size: 20px;">Linguiça Mista</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado11" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text12" style="display:none; font-size: 20px;">Linguiça de Frango</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado12" style="display:none;" class="resultado"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text13" style="display:none; font-size: 20px;">Cerveja Long Neck ou Lata</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado13" style="display:none;" class="resultadoCerveja"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text14" style="display:none; font-size: 20px;">Cerveja 600ml</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado14" style="display:none;" class="resultadoCerveja600"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text15" style="display:none; font-size: 20px;">Refrigerante 2L</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado15" style="display:none;" class="resultadoRefrigeranteSuco"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p id="text16" style="display:none; font-size: 20px;">Suco de Fruta 1L</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <p id="resultado16" style="display:none;" class="resultadoRefrigeranteSuco"></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
